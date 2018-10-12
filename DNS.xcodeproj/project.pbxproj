@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA8BF849217102990018587C /* DNSAResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF847217102990018587C /* DNSAResourceRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8BF84A217102990018587C /* DNSAResourceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF848217102990018587C /* DNSAResourceRecord.m */; };
+		DA8BF852217108690018587C /* ip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8BF850217106E00018587C /* ip.framework */; };
+		DA8BF8542171089D0018587C /* ip.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA8BF850217106E00018587C /* ip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA8BF8572171099B0018587C /* DNSOPTResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF8552171099B0018587C /* DNSOPTResourceRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8BF8582171099B0018587C /* DNSOPTResourceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF8562171099B0018587C /* DNSOPTResourceRecord.m */; };
+		DA8BF85B217112480018587C /* DNSCNAMEResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF859217112480018587C /* DNSCNAMEResourceRecord.h */; };
+		DA8BF85C217112480018587C /* DNSCNAMEResourceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF85A217112480018587C /* DNSCNAMEResourceRecord.m */; };
+		DA8BF8602171141C0018587C /* DNSLabelEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF85E2171141C0018587C /* DNSLabelEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8BF8612171141C0018587C /* DNSLabelEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF85F2171141C0018587C /* DNSLabelEncoder.m */; };
+		DA8BF863217115B50018587C /* DNSLabelEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF862217115B50018587C /* DNSLabelEncoderTest.m */; };
+		DA8BF866217117000018587C /* DNSHeaderEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF864217117000018587C /* DNSHeaderEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8BF867217117000018587C /* DNSHeaderEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF865217117000018587C /* DNSHeaderEncoder.m */; };
+		DA8BF869217118C20018587C /* DNSHeaderEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF868217118C20018587C /* DNSHeaderEncoderTest.m */; };
+		DA8BF86C217121000018587C /* DNSQuestionEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF86A217121000018587C /* DNSQuestionEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8BF86D217121000018587C /* DNSQuestionEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF86B217121000018587C /* DNSQuestionEncoder.m */; };
+		DA8BF86F217122480018587C /* DNSQuestionEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF86E217122480018587C /* DNSQuestionEncoderTest.m */; };
+		DA8BF8752171269E0018587C /* DNSMessageEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF8732171269E0018587C /* DNSMessageEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8BF8762171269E0018587C /* DNSMessageEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF8742171269E0018587C /* DNSMessageEncoder.m */; };
+		DA8BF878217127E50018587C /* DNSMessageEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF877217127E50018587C /* DNSMessageEncoderTest.m */; };
+		DADCE8832170141300BBC323 /* DNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCE8792170141300BBC323 /* DNS.framework */; };
+		DADCE88A2170141300BBC323 /* DNS.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE87C2170141300BBC323 /* DNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8972170147A00BBC323 /* DNSLabelDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8952170147A00BBC323 /* DNSLabelDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8982170147A00BBC323 /* DNSLabelDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8962170147A00BBC323 /* DNSLabelDecoder.m */; };
+		DADCE89A2170278700BBC323 /* DNSLabelDecoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8992170278700BBC323 /* DNSLabelDecoderTest.m */; };
+		DADCE8A021702DD800BBC323 /* DNSClass.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE89C21702D4300BBC323 /* DNSClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8A121702DD800BBC323 /* DNSOPCode.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE89D21702D5400BBC323 /* DNSOPCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8A221702DD800BBC323 /* DNSRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE89E21702D6D00BBC323 /* DNSRCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8A321702DD800BBC323 /* DNSType.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE89F21702D9600BBC323 /* DNSType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8A621702DF800BBC323 /* DNSHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8A421702DF800BBC323 /* DNSHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8A721702DF800BBC323 /* DNSHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8A521702DF800BBC323 /* DNSHeader.m */; };
+		DADCE8AA21702E3800BBC323 /* DNSHeaderDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8A821702E3800BBC323 /* DNSHeaderDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8AB21702E3800BBC323 /* DNSHeaderDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8A921702E3800BBC323 /* DNSHeaderDecoder.m */; };
+		DADCE8AD2170305D00BBC323 /* DNSHeaderDecoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8AC2170305D00BBC323 /* DNSHeaderDecoderTest.m */; };
+		DADCE8B02170332700BBC323 /* DNSQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8AE2170332700BBC323 /* DNSQuestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8B12170332700BBC323 /* DNSQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8AF2170332700BBC323 /* DNSQuestion.m */; };
+		DADCE8B8217033D800BBC323 /* DNSQuestionDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8B6217033D800BBC323 /* DNSQuestionDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8B9217033D800BBC323 /* DNSQuestionDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8B7217033D800BBC323 /* DNSQuestionDecoder.m */; };
+		DADCE8BB217036D200BBC323 /* DNSQuestionDecoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8BA217036D200BBC323 /* DNSQuestionDecoderTest.m */; };
+		DADCE8C22170386500BBC323 /* DNSResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8C02170386500BBC323 /* DNSResourceRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8C32170386500BBC323 /* DNSResourceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8C12170386500BBC323 /* DNSResourceRecord.m */; };
+		DADCE8C6217038A900BBC323 /* DNSResourceRecordDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8C4217038A900BBC323 /* DNSResourceRecordDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8C7217038A900BBC323 /* DNSResourceRecordDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8C5217038A900BBC323 /* DNSResourceRecordDecoder.m */; };
+		DADCE8C921703F0100BBC323 /* DNSResourceRecordDecoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8C821703F0100BBC323 /* DNSResourceRecordDecoderTest.m */; };
+		DADCE8CC2170E4BA00BBC323 /* DNSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8CA2170E4BA00BBC323 /* DNSMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8CD2170E4BA00BBC323 /* DNSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8CB2170E4BA00BBC323 /* DNSMessage.m */; };
+		DADCE8D02170E55400BBC323 /* DNSMessageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DADCE8CE2170E55400BBC323 /* DNSMessageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADCE8D12170E55400BBC323 /* DNSMessageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8CF2170E55400BBC323 /* DNSMessageDecoder.m */; };
+		DADCE8D32170EE9F00BBC323 /* DNSMessageParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCE8D22170EE9F00BBC323 /* DNSMessageParserTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DADCE8842170141300BBC323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DADCE8702170141200BBC323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADCE8782170141300BBC323;
+			remoteInfo = DNS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA8BF853217108960018587C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA8BF8542171089D0018587C /* ip.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA8BF847217102990018587C /* DNSAResourceRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSAResourceRecord.h; sourceTree = "<group>"; };
+		DA8BF848217102990018587C /* DNSAResourceRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSAResourceRecord.m; sourceTree = "<group>"; };
+		DA8BF850217106E00018587C /* ip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ip.framework; path = Carthage/Build/Mac/ip.framework; sourceTree = "<group>"; };
+		DA8BF8552171099B0018587C /* DNSOPTResourceRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSOPTResourceRecord.h; sourceTree = "<group>"; };
+		DA8BF8562171099B0018587C /* DNSOPTResourceRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSOPTResourceRecord.m; sourceTree = "<group>"; };
+		DA8BF859217112480018587C /* DNSCNAMEResourceRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSCNAMEResourceRecord.h; sourceTree = "<group>"; };
+		DA8BF85A217112480018587C /* DNSCNAMEResourceRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSCNAMEResourceRecord.m; sourceTree = "<group>"; };
+		DA8BF85E2171141C0018587C /* DNSLabelEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSLabelEncoder.h; sourceTree = "<group>"; };
+		DA8BF85F2171141C0018587C /* DNSLabelEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSLabelEncoder.m; sourceTree = "<group>"; };
+		DA8BF862217115B50018587C /* DNSLabelEncoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSLabelEncoderTest.m; sourceTree = "<group>"; };
+		DA8BF864217117000018587C /* DNSHeaderEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSHeaderEncoder.h; sourceTree = "<group>"; };
+		DA8BF865217117000018587C /* DNSHeaderEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSHeaderEncoder.m; sourceTree = "<group>"; };
+		DA8BF868217118C20018587C /* DNSHeaderEncoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSHeaderEncoderTest.m; sourceTree = "<group>"; };
+		DA8BF86A217121000018587C /* DNSQuestionEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSQuestionEncoder.h; sourceTree = "<group>"; };
+		DA8BF86B217121000018587C /* DNSQuestionEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSQuestionEncoder.m; sourceTree = "<group>"; };
+		DA8BF86E217122480018587C /* DNSQuestionEncoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSQuestionEncoderTest.m; sourceTree = "<group>"; };
+		DA8BF8732171269E0018587C /* DNSMessageEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSMessageEncoder.h; sourceTree = "<group>"; };
+		DA8BF8742171269E0018587C /* DNSMessageEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSMessageEncoder.m; sourceTree = "<group>"; };
+		DA8BF877217127E50018587C /* DNSMessageEncoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSMessageEncoderTest.m; sourceTree = "<group>"; };
+		DADCE8792170141300BBC323 /* DNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADCE87C2170141300BBC323 /* DNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNS.h; sourceTree = "<group>"; };
+		DADCE87D2170141300BBC323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADCE8822170141300BBC323 /* DNSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADCE8892170141300BBC323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADCE8932170142F00BBC323 /* DNSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSUtils.h; sourceTree = "<group>"; };
+		DADCE8952170147A00BBC323 /* DNSLabelDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSLabelDecoder.h; sourceTree = "<group>"; };
+		DADCE8962170147A00BBC323 /* DNSLabelDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSLabelDecoder.m; sourceTree = "<group>"; };
+		DADCE8992170278700BBC323 /* DNSLabelDecoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSLabelDecoderTest.m; sourceTree = "<group>"; };
+		DADCE89C21702D4300BBC323 /* DNSClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSClass.h; sourceTree = "<group>"; };
+		DADCE89D21702D5400BBC323 /* DNSOPCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSOPCode.h; sourceTree = "<group>"; };
+		DADCE89E21702D6D00BBC323 /* DNSRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSRCode.h; sourceTree = "<group>"; };
+		DADCE89F21702D9600BBC323 /* DNSType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSType.h; sourceTree = "<group>"; };
+		DADCE8A421702DF800BBC323 /* DNSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSHeader.h; sourceTree = "<group>"; };
+		DADCE8A521702DF800BBC323 /* DNSHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSHeader.m; sourceTree = "<group>"; };
+		DADCE8A821702E3800BBC323 /* DNSHeaderDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSHeaderDecoder.h; sourceTree = "<group>"; };
+		DADCE8A921702E3800BBC323 /* DNSHeaderDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSHeaderDecoder.m; sourceTree = "<group>"; };
+		DADCE8AC2170305D00BBC323 /* DNSHeaderDecoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSHeaderDecoderTest.m; sourceTree = "<group>"; };
+		DADCE8AE2170332700BBC323 /* DNSQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSQuestion.h; sourceTree = "<group>"; };
+		DADCE8AF2170332700BBC323 /* DNSQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSQuestion.m; sourceTree = "<group>"; };
+		DADCE8B6217033D800BBC323 /* DNSQuestionDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSQuestionDecoder.h; sourceTree = "<group>"; };
+		DADCE8B7217033D800BBC323 /* DNSQuestionDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSQuestionDecoder.m; sourceTree = "<group>"; };
+		DADCE8BA217036D200BBC323 /* DNSQuestionDecoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSQuestionDecoderTest.m; sourceTree = "<group>"; };
+		DADCE8C02170386500BBC323 /* DNSResourceRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSResourceRecord.h; sourceTree = "<group>"; };
+		DADCE8C12170386500BBC323 /* DNSResourceRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSResourceRecord.m; sourceTree = "<group>"; };
+		DADCE8C4217038A900BBC323 /* DNSResourceRecordDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSResourceRecordDecoder.h; sourceTree = "<group>"; };
+		DADCE8C5217038A900BBC323 /* DNSResourceRecordDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSResourceRecordDecoder.m; sourceTree = "<group>"; };
+		DADCE8C821703F0100BBC323 /* DNSResourceRecordDecoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSResourceRecordDecoderTest.m; sourceTree = "<group>"; };
+		DADCE8CA2170E4BA00BBC323 /* DNSMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSMessage.h; sourceTree = "<group>"; };
+		DADCE8CB2170E4BA00BBC323 /* DNSMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSMessage.m; sourceTree = "<group>"; };
+		DADCE8CE2170E55400BBC323 /* DNSMessageDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSMessageDecoder.h; sourceTree = "<group>"; };
+		DADCE8CF2170E55400BBC323 /* DNSMessageDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSMessageDecoder.m; sourceTree = "<group>"; };
+		DADCE8D22170EE9F00BBC323 /* DNSMessageParserTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSMessageParserTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADCE8762170141300BBC323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADCE87F2170141300BBC323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADCE8832170141300BBC323 /* DNS.framework in Frameworks */,
+				DA8BF852217108690018587C /* ip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA8BF843217102510018587C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BF850217106E00018587C /* ip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA8BF8462171026F0018587C /* Specialized Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BF847217102990018587C /* DNSAResourceRecord.h */,
+				DA8BF848217102990018587C /* DNSAResourceRecord.m */,
+				DA8BF8552171099B0018587C /* DNSOPTResourceRecord.h */,
+				DA8BF8562171099B0018587C /* DNSOPTResourceRecord.m */,
+				DA8BF859217112480018587C /* DNSCNAMEResourceRecord.h */,
+				DA8BF85A217112480018587C /* DNSCNAMEResourceRecord.m */,
+			);
+			path = "Specialized Resources";
+			sourceTree = "<group>";
+		};
+		DA8BF85D217113FE0018587C /* Encoders */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BF85E2171141C0018587C /* DNSLabelEncoder.h */,
+				DA8BF85F2171141C0018587C /* DNSLabelEncoder.m */,
+				DA8BF864217117000018587C /* DNSHeaderEncoder.h */,
+				DA8BF865217117000018587C /* DNSHeaderEncoder.m */,
+				DA8BF86A217121000018587C /* DNSQuestionEncoder.h */,
+				DA8BF86B217121000018587C /* DNSQuestionEncoder.m */,
+				DA8BF8732171269E0018587C /* DNSMessageEncoder.h */,
+				DA8BF8742171269E0018587C /* DNSMessageEncoder.m */,
+			);
+			path = Encoders;
+			sourceTree = "<group>";
+		};
+		DA8BF870217123400018587C /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				DADCE8992170278700BBC323 /* DNSLabelDecoderTest.m */,
+				DA8BF862217115B50018587C /* DNSLabelEncoderTest.m */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		DA8BF8712171234A0018587C /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DADCE8AC2170305D00BBC323 /* DNSHeaderDecoderTest.m */,
+				DA8BF868217118C20018587C /* DNSHeaderEncoderTest.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		DA8BF872217123520018587C /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				DADCE8BA217036D200BBC323 /* DNSQuestionDecoderTest.m */,
+				DA8BF86E217122480018587C /* DNSQuestionEncoderTest.m */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		DADCE86F2170141200BBC323 = {
+			isa = PBXGroup;
+			children = (
+				DADCE87B2170141300BBC323 /* DNS */,
+				DADCE8862170141300BBC323 /* DNSTests */,
+				DADCE87A2170141300BBC323 /* Products */,
+				DA8BF843217102510018587C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DADCE87A2170141300BBC323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADCE8792170141300BBC323 /* DNS.framework */,
+				DADCE8822170141300BBC323 /* DNSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADCE87B2170141300BBC323 /* DNS */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BF8462171026F0018587C /* Specialized Resources */,
+				DADCE89B21702D2500BBC323 /* Models */,
+				DADCE8942170146E00BBC323 /* Decoders */,
+				DA8BF85D217113FE0018587C /* Encoders */,
+				DADCE8932170142F00BBC323 /* DNSUtils.h */,
+				DADCE87D2170141300BBC323 /* Info.plist */,
+				DADCE87C2170141300BBC323 /* DNS.h */,
+			);
+			path = DNS;
+			sourceTree = "<group>";
+		};
+		DADCE8862170141300BBC323 /* DNSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BF872217123520018587C /* Question */,
+				DA8BF8712171234A0018587C /* Header */,
+				DA8BF870217123400018587C /* Label */,
+				DADCE8892170141300BBC323 /* Info.plist */,
+				DADCE8C821703F0100BBC323 /* DNSResourceRecordDecoderTest.m */,
+				DADCE8D22170EE9F00BBC323 /* DNSMessageParserTest.m */,
+				DA8BF877217127E50018587C /* DNSMessageEncoderTest.m */,
+			);
+			path = DNSTests;
+			sourceTree = "<group>";
+		};
+		DADCE8942170146E00BBC323 /* Decoders */ = {
+			isa = PBXGroup;
+			children = (
+				DADCE8952170147A00BBC323 /* DNSLabelDecoder.h */,
+				DADCE8962170147A00BBC323 /* DNSLabelDecoder.m */,
+				DADCE8A821702E3800BBC323 /* DNSHeaderDecoder.h */,
+				DADCE8A921702E3800BBC323 /* DNSHeaderDecoder.m */,
+				DADCE8B6217033D800BBC323 /* DNSQuestionDecoder.h */,
+				DADCE8B7217033D800BBC323 /* DNSQuestionDecoder.m */,
+				DADCE8C4217038A900BBC323 /* DNSResourceRecordDecoder.h */,
+				DADCE8C5217038A900BBC323 /* DNSResourceRecordDecoder.m */,
+				DADCE8CE2170E55400BBC323 /* DNSMessageDecoder.h */,
+				DADCE8CF2170E55400BBC323 /* DNSMessageDecoder.m */,
+			);
+			path = Decoders;
+			sourceTree = "<group>";
+		};
+		DADCE89B21702D2500BBC323 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DADCE89C21702D4300BBC323 /* DNSClass.h */,
+				DADCE89D21702D5400BBC323 /* DNSOPCode.h */,
+				DADCE89E21702D6D00BBC323 /* DNSRCode.h */,
+				DADCE89F21702D9600BBC323 /* DNSType.h */,
+				DADCE8A421702DF800BBC323 /* DNSHeader.h */,
+				DADCE8A521702DF800BBC323 /* DNSHeader.m */,
+				DADCE8AE2170332700BBC323 /* DNSQuestion.h */,
+				DADCE8AF2170332700BBC323 /* DNSQuestion.m */,
+				DADCE8C02170386500BBC323 /* DNSResourceRecord.h */,
+				DADCE8C12170386500BBC323 /* DNSResourceRecord.m */,
+				DADCE8CA2170E4BA00BBC323 /* DNSMessage.h */,
+				DADCE8CB2170E4BA00BBC323 /* DNSMessage.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DADCE8742170141300BBC323 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADCE8A321702DD800BBC323 /* DNSType.h in Headers */,
+				DADCE8B02170332700BBC323 /* DNSQuestion.h in Headers */,
+				DA8BF849217102990018587C /* DNSAResourceRecord.h in Headers */,
+				DA8BF8752171269E0018587C /* DNSMessageEncoder.h in Headers */,
+				DADCE8A121702DD800BBC323 /* DNSOPCode.h in Headers */,
+				DADCE8CC2170E4BA00BBC323 /* DNSMessage.h in Headers */,
+				DADCE8AA21702E3800BBC323 /* DNSHeaderDecoder.h in Headers */,
+				DA8BF866217117000018587C /* DNSHeaderEncoder.h in Headers */,
+				DADCE8A621702DF800BBC323 /* DNSHeader.h in Headers */,
+				DADCE8B8217033D800BBC323 /* DNSQuestionDecoder.h in Headers */,
+				DADCE8D02170E55400BBC323 /* DNSMessageDecoder.h in Headers */,
+				DADCE8A021702DD800BBC323 /* DNSClass.h in Headers */,
+				DADCE8972170147A00BBC323 /* DNSLabelDecoder.h in Headers */,
+				DA8BF8572171099B0018587C /* DNSOPTResourceRecord.h in Headers */,
+				DA8BF8602171141C0018587C /* DNSLabelEncoder.h in Headers */,
+				DADCE8C22170386500BBC323 /* DNSResourceRecord.h in Headers */,
+				DA8BF86C217121000018587C /* DNSQuestionEncoder.h in Headers */,
+				DA8BF85B217112480018587C /* DNSCNAMEResourceRecord.h in Headers */,
+				DADCE8C6217038A900BBC323 /* DNSResourceRecordDecoder.h in Headers */,
+				DADCE88A2170141300BBC323 /* DNS.h in Headers */,
+				DADCE8A221702DD800BBC323 /* DNSRCode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DADCE8782170141300BBC323 /* DNS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADCE88D2170141300BBC323 /* Build configuration list for PBXNativeTarget "DNS" */;
+			buildPhases = (
+				DADCE8742170141300BBC323 /* Headers */,
+				DADCE8752170141300BBC323 /* Sources */,
+				DADCE8762170141300BBC323 /* Frameworks */,
+				DADCE8772170141300BBC323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNS;
+			productName = DNS;
+			productReference = DADCE8792170141300BBC323 /* DNS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DADCE8812170141300BBC323 /* DNSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADCE8902170141300BBC323 /* Build configuration list for PBXNativeTarget "DNSTests" */;
+			buildPhases = (
+				DADCE87E2170141300BBC323 /* Sources */,
+				DADCE87F2170141300BBC323 /* Frameworks */,
+				DADCE8802170141300BBC323 /* Resources */,
+				DA8BF853217108960018587C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DADCE8852170141300BBC323 /* PBXTargetDependency */,
+			);
+			name = DNSTests;
+			productName = DNSTests;
+			productReference = DADCE8822170141300BBC323 /* DNSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADCE8702170141200BBC323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Victor Gama";
+				TargetAttributes = {
+					DADCE8782170141300BBC323 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DADCE8812170141300BBC323 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = DADCE8732170141200BBC323 /* Build configuration list for PBXProject "DNS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DADCE86F2170141200BBC323;
+			productRefGroup = DADCE87A2170141300BBC323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADCE8782170141300BBC323 /* DNS */,
+				DADCE8812170141300BBC323 /* DNSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DADCE8772170141300BBC323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADCE8802170141300BBC323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADCE8752170141300BBC323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADCE8B9217033D800BBC323 /* DNSQuestionDecoder.m in Sources */,
+				DADCE8B12170332700BBC323 /* DNSQuestion.m in Sources */,
+				DA8BF84A217102990018587C /* DNSAResourceRecord.m in Sources */,
+				DADCE8AB21702E3800BBC323 /* DNSHeaderDecoder.m in Sources */,
+				DADCE8CD2170E4BA00BBC323 /* DNSMessage.m in Sources */,
+				DADCE8A721702DF800BBC323 /* DNSHeader.m in Sources */,
+				DA8BF8582171099B0018587C /* DNSOPTResourceRecord.m in Sources */,
+				DADCE8C32170386500BBC323 /* DNSResourceRecord.m in Sources */,
+				DA8BF8762171269E0018587C /* DNSMessageEncoder.m in Sources */,
+				DADCE8982170147A00BBC323 /* DNSLabelDecoder.m in Sources */,
+				DA8BF867217117000018587C /* DNSHeaderEncoder.m in Sources */,
+				DA8BF86D217121000018587C /* DNSQuestionEncoder.m in Sources */,
+				DADCE8D12170E55400BBC323 /* DNSMessageDecoder.m in Sources */,
+				DA8BF8612171141C0018587C /* DNSLabelEncoder.m in Sources */,
+				DADCE8C7217038A900BBC323 /* DNSResourceRecordDecoder.m in Sources */,
+				DA8BF85C217112480018587C /* DNSCNAMEResourceRecord.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADCE87E2170141300BBC323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8BF86F217122480018587C /* DNSQuestionEncoderTest.m in Sources */,
+				DADCE8AD2170305D00BBC323 /* DNSHeaderDecoderTest.m in Sources */,
+				DADCE8BB217036D200BBC323 /* DNSQuestionDecoderTest.m in Sources */,
+				DADCE8D32170EE9F00BBC323 /* DNSMessageParserTest.m in Sources */,
+				DADCE89A2170278700BBC323 /* DNSLabelDecoderTest.m in Sources */,
+				DADCE8C921703F0100BBC323 /* DNSResourceRecordDecoderTest.m in Sources */,
+				DA8BF869217118C20018587C /* DNSHeaderEncoderTest.m in Sources */,
+				DA8BF878217127E50018587C /* DNSMessageEncoderTest.m in Sources */,
+				DA8BF863217115B50018587C /* DNSLabelEncoderTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DADCE8852170141300BBC323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADCE8782170141300BBC323 /* DNS */;
+			targetProxy = DADCE8842170141300BBC323 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DADCE88B2170141300BBC323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DADCE88C2170141300BBC323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DADCE88E2170141300BBC323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7GEB3UCDV7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DNS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vito.DNS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DADCE88F2170141300BBC323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7GEB3UCDV7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DNS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vito.DNS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DADCE8912170141300BBC323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7GEB3UCDV7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = DNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vito.DNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DADCE8922170141300BBC323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7GEB3UCDV7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = DNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vito.DNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADCE8732170141200BBC323 /* Build configuration list for PBXProject "DNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADCE88B2170141300BBC323 /* Debug */,
+				DADCE88C2170141300BBC323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADCE88D2170141300BBC323 /* Build configuration list for PBXNativeTarget "DNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADCE88E2170141300BBC323 /* Debug */,
+				DADCE88F2170141300BBC323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADCE8902170141300BBC323 /* Build configuration list for PBXNativeTarget "DNSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADCE8912170141300BBC323 /* Debug */,
+				DADCE8922170141300BBC323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADCE8702170141200BBC323 /* Project object */;
+}
