@@ -26,6 +26,7 @@ FOUNDATION_EXPORT const unsigned char DNSVersionString[];
 
 #import <DNS/DNSAResourceRecord.h>
 #import <DNS/DNSOPTResourceRecord.h>
+#import <DNS/DNSCNAMEResourceRecord.h>
 
 #import <DNS/DNSLabelDecoder.h>
 #import <DNS/DNSHeaderDecoder.h>

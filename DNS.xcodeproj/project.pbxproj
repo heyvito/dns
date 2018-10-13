@@ -13,7 +13,7 @@
 		DA8BF8542171089D0018587C /* ip.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA8BF850217106E00018587C /* ip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA8BF8572171099B0018587C /* DNSOPTResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF8552171099B0018587C /* DNSOPTResourceRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8BF8582171099B0018587C /* DNSOPTResourceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF8562171099B0018587C /* DNSOPTResourceRecord.m */; };
-		DA8BF85B217112480018587C /* DNSCNAMEResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF859217112480018587C /* DNSCNAMEResourceRecord.h */; };
+		DA8BF85B217112480018587C /* DNSCNAMEResourceRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF859217112480018587C /* DNSCNAMEResourceRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8BF85C217112480018587C /* DNSCNAMEResourceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF85A217112480018587C /* DNSCNAMEResourceRecord.m */; };
 		DA8BF8602171141C0018587C /* DNSLabelEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8BF85E2171141C0018587C /* DNSLabelEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8BF8612171141C0018587C /* DNSLabelEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BF85F2171141C0018587C /* DNSLabelEncoder.m */; };
